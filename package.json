@@ -1,7 +1,7 @@
 {
-  "name": "pix-diff",
-  "version": "1.0.10",
-  "description": "Protractor plugin for image comparison",
+  "name": "pix-diff-fork",
+  "version": "0.0.1",
+  "description": "Protractor plugin for image comparison. Forked from pix-diff of Koola",
   "main": "index.js",
   "dependencies": {
     "blink-diff": "1.0.12",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/koola/pix-diff.git"
+    "url": "https://github.com/ottorun/pix-diff.git"
   },
   "keywords": [
     "image-diff",
@@ -38,10 +38,10 @@
     "difference",
     "compare"
   ],
-  "author": "Koola",
+  "author": "Koola/Ottorun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/koola/pix-diff/issues"
+    "url": "https://github.com/ottorun/pix-diff/issues"
   },
-  "homepage": "https://github.com/koola/pix-diff"
+  "homepage": "https://github.com/ottorun/pix-diff"
 }
