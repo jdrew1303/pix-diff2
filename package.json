@@ -1,6 +1,6 @@
 {
   "name": "pix-diff-fork",
-  "version": "0.0.1",
+  "version": "0.0.1-0",
   "description": "Protractor plugin for image comparison. Forked from pix-diff of Koola",
   "main": "index.js",
   "dependencies": {

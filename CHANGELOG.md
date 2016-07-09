@@ -1,5 +1,10 @@
 Changelog
 =========
+
+v0.0.1-0 - update version blink-diff (09/08/2016)
+
+---------------------
+
 v1.0.10 - Fix not resolving path to framework during initialisation #14
         - Update dependencies
 
