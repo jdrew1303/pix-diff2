@@ -30,6 +30,12 @@ module.exports = function(grunt) {
                     'test/protractorJasmine.conf.js'
                 ]
             },
+            jasmineFirefox: {
+                cmd: 'node_modules/.bin/protractor',
+                args: [
+                    'test/protractorJasmineFirefox.conf.js'
+                ]
+            },
             mocha: {
                 cmd: 'node_modules/.bin/protractor',
                 args: [
