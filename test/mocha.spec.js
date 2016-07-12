@@ -5,13 +5,13 @@ var expect = require('chai').expect,
     fs = require('fs'),
     PixDiff = require('../');
 
-describe('Pix-Diff', function() {
+describe('Pix-Diff', function () {
 
     beforeEach(function () {
         browser.get(browser.baseUrl);
     });
 
-    describe('method matchers', function() {
+    describe('method matchers', function () {
 
         beforeEach(function () {
             browser.pixDiff = new PixDiff({
@@ -60,17 +60,17 @@ describe('Pix-Diff', function() {
         it('should not crash with image not found', function () {
             var errorThrown = false;
             browser.pixDiff.checkScreen('imagenotexst', {threshold: 1}).then(function (result) {
-                fail('must not do a comparison.');
+                expect.fail();
             }).catch(function (error) {
                 // good
                 errorThrown = true;
             }).then(function () {
-                expect(errorThrown).toBe(true);
+                expect(errorThrown).to.be.true;
             });
         });
     });
 
-    describe('format image name', function() {
+    describe('format image name', function () {
 
         beforeEach(function () {
             browser.pixDiff = new PixDiff({
