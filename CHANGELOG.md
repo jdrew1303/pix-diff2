@@ -1,7 +1,11 @@
 Changelog
 =========
 
-v0.0.1-0 - update version blink-diff (09/08/2016)
+v0.0.1 - Official release pix-diff2 (13/07/2016)
+       - Update dependencies
+       - Added tests
+
+v0.0.1-0 - update version blink-diff (09/07/2016)
 
 ---------------------
 
