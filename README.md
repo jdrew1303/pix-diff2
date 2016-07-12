@@ -1,24 +1,30 @@
-Pix-Diff
+Pix-Diff2
 ==========
 
 A lightweight protractor plugin for image comparison
 
-[![Build Status](https://travis-ci.org/koola/pix-diff.svg)](https://travis-ci.org/koola/pix-diff)
-[![npm version](https://badge.fury.io/js/pix-diff.svg)](http://badge.fury.io/js/pix-diff)
+## About this fork
+First, thanks @Koola for this great protractor plugin.
 
-[![NPM](https://nodei.co/npm/pix-diff.png)](https://nodei.co/npm/pix-diff/)
+This fork is not intended to replace the original Pix-Diff. I needed to change the plugin fast to match my needs.
+Therefore i will continue to maintain it in the future and be as close as possible to original Pix-Diff.
+
+[![Build Status](https://travis-ci.org/ottorun/pix-diff.svg)](https://travis-ci.org/ottorun/pix-diff)
+[![npm version](https://badge.fury.io/js/pix-diff2.svg)](http://badge.fury.io/js/pix-diff2)
+
+[![NPM](https://nodei.co/npm/pix-diff2.png)](https://nodei.co/npm/pix-diff2/)
 
 ##Installation
 
 Install this module locally with the following command:
 ```shell
-npm install pix-diff
+npm install pix-diff2
 ```
 
 Save to dependencies or dev-dependencies:
 ```shell
-npm install --save pix-diff
-npm install --save-dev pix-diff
+npm install --save pix-diff2
+npm install --save-dev pix-diff2
 ```
 
 ##Usage
@@ -31,7 +37,7 @@ exports.config = {
    // your config here ...
 
     onPrepare: function() {
-        var PixDiff = require('pix-diff');
+        var PixDiff = require('pix-diff2');
         browser.pixDiff = new PixDiff(
             {
                 basePath: 'path/to/screenshots/',
