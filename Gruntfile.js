@@ -62,8 +62,9 @@ module.exports = function(grunt) {
 
     //tasks
     grunt.registerTask('jasmine', 'Run Jasmine integration tests', ['clean:screens', 'run:jasmine']);
+    grunt.registerTask('jasmineFirefox', 'Run Jasmine integration tests', ['clean:screens', 'run:jasmineFirefox']);
     grunt.registerTask('mocha', 'Run Mocha integration tests', ['clean:screens', 'run:mocha']);
     grunt.registerTask('build', ['jshint:all']);
     grunt.registerTask('release', ['bump']);
-    grunt.registerTask('default', ['jasmine', 'mocha']);
+    grunt.registerTask('default', ['jasmine', 'jasmineFirefox', 'mocha']);
 };
