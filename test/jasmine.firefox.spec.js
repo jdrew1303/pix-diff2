@@ -4,13 +4,13 @@ var BlinkDiff = require('blink-diff'),
     fs = require('fs'),
     PixDiff = require('../');
 
-describe('Pix-Diff', function() {
+describe('Pix-Diff', function () {
 
     beforeEach(function () {
         browser.get(browser.baseUrl);
     });
 
-    describe('mathod matchers', function() {
+    describe('mathod matchers', function () {
 
         beforeEach(function () {
             browser.pixDiff = new PixDiff({
@@ -38,7 +38,7 @@ describe('Pix-Diff', function() {
 
         it('should match the page', function () {
             browser.pixDiff.checkScreen('examplePage').then(function (result) {
-                expect(result.code).toEqual(BlinkDiff.RESULT_IDENTICAL);    
+                expect(result.code).toEqual(BlinkDiff.RESULT_IDENTICAL);
             });
         });
 
@@ -55,9 +55,21 @@ describe('Pix-Diff', function() {
         it('should not match the page with custom matcher', function () {
             expect(browser.pixDiff.checkScreen('exampleFail', {threshold: 1})).not.toMatchScreen();
         });
+
+        it('should not crash with image not found', function () {
+            var errorThrown = false;
+            browser.pixDiff.checkScreen('imagenotexst', {threshold: 1}).then(function (result) {
+                fail('must not do a comparison.');
+            }).catch(function (error) {
+                // good
+                errorThrown = true;
+            }).then(function () {
+                expect(errorThrown).toBe(true);
+            });
+        });
     });
 
-    describe('format image name', function() {
+    describe('format image name', function () {
 
         beforeEach(function () {
             browser.pixDiff = new PixDiff({
