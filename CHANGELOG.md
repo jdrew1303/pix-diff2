@@ -1,6 +1,7 @@
 Changelog
 =========
 
+v0.0.2 - minor fix : git repo url (13/07/2016)
 v0.0.1 - Official release pix-diff2 (13/07/2016)
        - Update dependencies
        - Added tests
