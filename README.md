@@ -9,7 +9,7 @@ First, thanks @Koola for this great protractor plugin.
 This fork is not intended to replace the original Pix-Diff. I needed to change the plugin fast to match my needs.
 Therefore i will continue to maintain it in the future and be as close as possible to original Pix-Diff.
 
-[![Build Status](https://travis-ci.org/ottorun/pix-diff.svg)](https://travis-ci.org/ottorun/pix-diff)
+[![Build Status](https://travis-ci.org/ottorun/pix-diff2.svg)](https://travis-ci.org/ottorun/pix-diff2)
 [![npm version](https://badge.fury.io/js/pix-diff2.svg)](http://badge.fury.io/js/pix-diff2)
 
 [![NPM](https://nodei.co/npm/pix-diff2.png)](https://nodei.co/npm/pix-diff2/)
